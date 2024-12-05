@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your digital bookstore for consultations, books, and audiobooks">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <title>Golden Books - Your Digital Library</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Alchemy Academy - Transform Your Life">
+    <meta name="description" content="Discover transformative books and expert consultations at Alchemy Academy. Start your journey to success today.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.com/">
+    <meta property="og:title" content="Alchemy Academy - Transform Your Life">
+    <meta property="og:description" content="Discover transformative books and expert consultations at Alchemy Academy. Start your journey to success today.">
+    <meta property="og:image" content="https://your-domain.com/assets/share-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://your-domain.com/">
+    <meta property="twitter:title" content="Alchemy Academy - Transform Your Life">
+    <meta property="twitter:description" content="Discover transformative books and expert consultations at Alchemy Academy. Start your journey to success today.">
+    <meta property="twitter:image" content="https://your-domain.com/assets/share-image.jpg">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="assets/logo.png" alt="Alchemy Academy Logo" class="nav-logo-img">
+                    <a href="/" class="nav-logo">Alchemy Academy</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="/pages/shop.html">Books</a></li>
+                    <li><a href="/pages/consultations.html">Consultations</a></li>
+                    <li><a href="/pages/account/login.html">Login</a></li>
+                    <li>
+                        <a href="/pages/cart.html" class="cart-link">
+                            Cart <span class="cart-count" id="cartCount">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Alchemy Academy</h1>
+                <p>Discover a world of knowledge through our carefully curated collection of books and expert consultations.</p>
+                <a href="/pages/shop.html" class="btn btn-primary">Explore Books</a>
+            </div>
+        </section>
+
+        <section class="featured-books">
+            <div class="container">
+                <h2 class="section-title">Featured Books</h2>
+                <div class="books-grid">
+                    <div class="book-card">
+                        <div class="book-image">
+                            <a href="/pages/books/product.html?id=1">
+                                <img src="assets/1.png" alt="Write and Grow Rich">
+                            </a>
+                        </div>
+                        <div class="book-info">
+                            <h3>Write and Grow Rich</h3>
+                            <p class="price">$29.99</p>
+                            <div class="book-actions">
+                                <a href="/pages/books/product.html?id=1" class="btn btn-secondary">View Details</a>
+                                <button class="btn btn-primary add-to-cart" data-id="1">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-image">
+                            <a href="/pages/books/product.html?id=2">
+                                <img src="assets/2.png" alt="The Geometry of Spirit">
+                            </a>
+                        </div>
+                        <div class="book-info">
+                            <h3>The Geometry of Spirit</h3>
+                            <p class="price">$24.99</p>
+                            <div class="book-actions">
+                                <a href="/pages/books/product.html?id=2" class="btn btn-secondary">View Details</a>
+                                <button class="btn btn-primary add-to-cart" data-id="2">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-image">
+                            <a href="/pages/books/product.html?id=3">
+                                <img src="assets/3.png" alt="Everything and Beyond">
+                            </a>
+                        </div>
+                        <div class="book-info">
+                            <h3>Everything and Beyond</h3>
+                            <p class="price">$34.99</p>
+                            <div class="book-actions">
+                                <a href="/pages/books/product.html?id=3" class="btn btn-secondary">View Details</a>
+                                <button class="btn btn-primary add-to-cart" data-id="3">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Alchemy Academy</h3>
+                    <p>Your journey to knowledge starts here</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/pages/shop.html">Books</a></li>
+                        <li><a href="/pages/consultations.html">Consultations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Email: info@alchemyacademy.com</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Alchemy Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js" type="module"></script>
+</body>
+</html> 

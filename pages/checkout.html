@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Checkout - Complete your purchase">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=Ab5PxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxKwA&currency=USD"></script>
+    
+    <title>Checkout - Alchemy Academy</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="../assets/logo.png" alt="Alchemy Academy Logo" class="nav-logo-img">
+                    <a href="/" class="nav-logo">Alchemy Academy</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="/pages/shop.html">Books</a></li>
+                    <li><a href="/pages/consultations.html">Consultations</a></li>
+                    <li><a href="/pages/account/login.html">Login</a></li>
+                    <li>
+                        <a href="/pages/cart.html" class="cart-link">
+                            Cart <span class="cart-count" id="cartCount">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Checkout</h1>
+                <p>Complete your purchase securely</p>
+            </div>
+        </section>
+
+        <section class="checkout-section">
+            <div class="container">
+                <div class="checkout-grid">
+                    <!-- Order Summary -->
+                    <div class="order-summary">
+                        <h2>Order Summary</h2>
+                        <div class="order-items" id="orderItems">
+                            <!-- Items will be populated by JavaScript -->
+                        </div>
+                        <div class="order-totals">
+                            <div class="summary-item">
+                                <span>Subtotal</span>
+                                <span id="subtotal">$0.00</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Tax</span>
+                                <span id="tax">$0.00</span>
+                            </div>
+                            <div class="summary-total">
+                                <span>Total</span>
+                                <span id="total">$0.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment Section -->
+                    <div class="payment-section">
+                        <h2>Payment Method</h2>
+                        <div class="payment-options">
+                            <div id="paypal-button-container"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <!-- Same footer as other pages -->
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/utils/api.js" type="module"></script>
+    <script src="../js/pages/checkout.js" type="module"></script>
+</body>
+</html> 

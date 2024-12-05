@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your consultation session">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <title>Consultations - Alchemy Academy</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="../assets/logo.png" alt="Alchemy Academy Logo" class="nav-logo-img">
+                    <a href="/" class="nav-logo">Alchemy Academy</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="/pages/shop.html">Books</a></li>
+                    <li><a href="/pages/consultations.html" class="active">Consultations</a></li>
+                    <li><a href="/pages/account/login.html">Login</a></li>
+                    <li>
+                        <a href="/pages/cart.html" class="cart-link">
+                            Cart <span class="cart-count" id="cartCount">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="consultation-header">
+            <div class="container">
+                <h1>Book a Consultation</h1>
+                <p>Schedule a one-on-one session with our experts</p>
+            </div>
+        </section>
+
+        <section class="consultation-booking">
+            <div class="container">
+                <div class="booking-grid">
+                    <!-- Calendar Section -->
+                    <div class="calendar-section">
+                        <div class="calendar-header">
+                            <button class="btn-icon" id="prevMonth">&lt;</button>
+                            <h2 id="currentMonth">January 2024</h2>
+                            <button class="btn-icon" id="nextMonth">&gt;</button>
+                        </div>
+                        <div class="calendar-grid" id="calendarGrid">
+                            <!-- Calendar will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Time Slots Section -->
+                    <div class="time-slots">
+                        <h3>Available Times</h3>
+                        <div class="slots-container" id="timeSlots">
+                            <!-- Time slots will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Booking Form -->
+                    <div class="booking-form" id="bookingForm" style="display: none;">
+                        <h3>Complete Your Booking</h3>
+                        <form id="consultationForm">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="topic">Consultation Topic</label>
+                                <select id="topic" required>
+                                    <option value="">Select a topic</option>
+                                    <option value="career">Career Guidance</option>
+                                    <option value="business">Business Strategy</option>
+                                    <option value="personal">Personal Development</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="notes">Additional Notes</label>
+                                <textarea id="notes" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Confirm Booking</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <!-- Footer content same as other pages -->
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/utils/api.js" type="module"></script>
+    <script src="../js/pages/consultations.js" type="module"></script>
+</body>
+</html>

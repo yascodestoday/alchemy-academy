@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book details and purchase options">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <title>Book Title - Alchemy Academy</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="../../assets/logo.png" alt="Alchemy Academy Logo" class="nav-logo-img">
+                    <a href="/" class="nav-logo">Alchemy Academy</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="/pages/shop.html" class="active">Books</a></li>
+                    <li><a href="/pages/consultations.html">Consultations</a></li>
+                    <li><a href="/pages/account/login.html">Login</a></li>
+                    <li>
+                        <a href="/pages/cart.html" class="cart-link">
+                            Cart <span class="cart-count" id="cartCount">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-section">
+            <div class="container">
+                <div class="product-grid">
+                    <!-- Book Image -->
+                    <div class="product-image">
+                        <img src="" alt="" id="bookImage">
+                    </div>
+
+                    <!-- Book Details -->
+                    <div class="product-details">
+                        <h1 id="bookTitle"></h1>
+                        <p class="subtitle" id="bookSubtitle"></p>
+                        <p class="author" id="bookAuthor"></p>
+                        <div class="price" id="bookPrice"></div>
+                        
+                        <div class="product-description">
+                            <p id="mainText" class="main-text"></p>
+                            
+                            <div class="features-section">
+                                <h2>Key Features</h2>
+                                <ul id="bulletPoints" class="product-bullets">
+                                    <!-- Bullet points will be inserted here -->
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="product-actions">
+                            <button class="btn btn-primary" id="addToCartBtn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature Banners (Only shown for Write and Grow Rich) -->
+                <div id="featureBanners" class="feature-banners">
+                    <div class="banner-section">
+                        <h2>What Makes This Workbook Unique?</h2>
+                        <div class="banner-grid">
+                            <div class="feature-card planner-tools">
+                                <h3>Planning Tools</h3>
+                                <ul>
+                                    <li>Financial Planner</li>
+                                    <li>Content Planner</li>
+                                    <li>Business Planner</li>
+                                    <li>Sales Planner</li>
+                                </ul>
+                            </div>
+                            <div class="feature-card manifestation">
+                                <h3>Daily Practices</h3>
+                                <ul>
+                                    <li>Money Manifestation</li>
+                                    <li>Scripting Techniques</li>
+                                    <li>Gratitude Journaling</li>
+                                </ul>
+                            </div>
+                            <div class="feature-card transformation">
+                                <h3>Personal Growth</h3>
+                                <ul>
+                                    <li>Shadow Work</li>
+                                    <li>Self-Concept Transformation</li>
+                                    <li>Success Mindset</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Gallery Section -->
+                <div class="product-gallery" style="display: none;">
+                    <div class="gallery-container">
+                        <div class="gallery-slider">
+                            <div class="slider-track" id="sliderTrack">
+                                <img src="../../assets/sliders/1.png.png" alt="Product Image 1" class="slider-image">
+                                <img src="../../assets/sliders/2.png.png" alt="Product Image 2" class="slider-image">
+                                <img src="../../assets/sliders/3.png.png" alt="Product Image 3" class="slider-image">
+                                <img src="../../assets/sliders/4.png.png" alt="Product Image 4" class="slider-image">
+                            </div>
+                            <button class="slider-btn prev" id="prevBtn">&lt;</button>
+                            <button class="slider-btn next" id="nextBtn">&gt;</button>
+                            <div class="slider-dots" id="sliderDots"></div>
+                        </div>
+                        <div class="gallery-text">
+                            <h2>Transform Your Life Through Scripting</h2>
+                            <p>This transformative workbook combines practical business strategies with powerful manifestation techniques. Each page is designed to help you unlock your potential and create the abundance you deserve.</p>
+                            <ul class="gallery-features">
+                                <li>Daily manifestation exercises</li>
+                                <li>Business planning templates</li>
+                                <li>Success mindset practices</li>
+                                <li>Wealth consciousness activities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <!-- Footer content same as other pages -->
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../js/utils/api.js" type="module"></script>
+    <script src="../../js/pages/product.js" type="module"></script>
+</body>
+</html> 
