@@ -823,7 +823,7 @@ html {
 }
 
 .feature-card ul li::before {
-    content: '✦';
+    content: '';
     position: absolute;
     left: 0;
     color: var(--accent);
@@ -1411,4 +1411,223 @@ html {
 /* Hide PayPal container if cart is empty */
 .cart-empty #paypal-button-container {
     display: none;
+}
+
+.product-layout {
+    display: flex;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.product-image-container {
+    flex: 1;
+    max-width: 500px;
+}
+
+.main-product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-info-container {
+    flex: 1;
+    padding: 2rem 0;
+}
+
+.product-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.author {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2a2a2a;
+    margin-bottom: 2rem;
+}
+
+.product-description {
+    margin-bottom: 2rem;
+}
+
+.feature-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+.feature-list li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.feature-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .product-layout {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .product-image-container {
+        max-width: 100%;
+    }
+}
+
+.product-hero {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--surface);
+}
+
+.product-layout {
+    display: flex;
+    gap: 8rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    align-items: flex-start;
+}
+
+.product-image-container {
+    flex: 1;
+    max-width: 400px;
+}
+
+.main-product-image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 6px var(--glass-shadow);
+}
+
+.product-info-container {
+    flex: 1;
+    padding: 0;
+}
+
+.product-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.author {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+}
+
+.main-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+/* Add to Cart Button */
+.btn-primary {
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+}
+
+/* Key Features Section */
+.product-features {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--background);
+    margin-top: 4rem;
+}
+
+.product-features h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: var(--text-primary);
+}
+
+.feature-list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.feature-list li {
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.feature-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .product-layout {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .product-image-container {
+        max-width: 100%;
+    }
+    
+    .product-info-container {
+        padding: 0 1rem;
+    }
 }
